@@ -4,10 +4,10 @@ StudentManagementPro is a Java-based web application designed for efficient mana
 
 - **Student Management:** Create, update, search, and manage student records.
 - **User Management:** Add and manage users with roles such as Super Admin, Admin, and HR.
-- **Authentication & Authorization:** Secure login system with session management.
+- **Authentication & Authorization:** Secure login system with role based access management.
 - **Role-Based Access Control (RBAC):** Restrict access to features based on user roles (Super Admin, Admin, HR).
 - **Dashboards:** Separate dashboards for Super Admin and other users.
-- **Settings:** Manage application and user settings.
+- **Settings:** Manage password change.
 
 ## Technologies Used
 
@@ -155,6 +155,11 @@ StudentManagementPro/
   ##### Setting
    <img width="1910" height="922" alt="HRSetting" src="https://github.com/user-attachments/assets/4cad8550-e142-41a3-8677-29ef90f3ec12" />
 </details>
+
+## 👨‍💻 Author
+
+**Pritiranjan Mohanty** — [GitHub Profile](https://github.com/pritiranjan-01)
+
 
 ## License
 This project is licensed under the MIT License.
