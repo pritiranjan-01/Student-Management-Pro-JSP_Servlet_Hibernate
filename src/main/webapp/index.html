@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .carousel-item {
+        height: 100vh;
+        min-height: 400px;
+        background: no-repeat center center/cover;
+        position: relative;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+      }
+      .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+      }
+      .carousel-caption h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .carousel-caption p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      section {
+        padding: 80px 0;
+      }
+      .feature-icon {
+        font-size: 3rem;
+        color: #0d6efd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">📘 StudentManager Pro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <a href="Login.jsp" class="btn btn-primary ms-3">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/6893919/pexels-photo-6893919.jpeg')">
+          <div class="overlay"></div>
+          <div class="carousel-caption text-center text-white">
+            <h1>Modern Student Management Solution</h1>
+            <p>Manage Students, Admins, and HR efficiently with our role-based system.</p>
+            <a href="Login.jsp" class="btn btn-primary btn-lg me-3">Get Started</a>
+            <a href="#features" class="btn btn-outline-light btn-lg">Explore Features</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600')">
+          <div class="overlay"></div>
+          <div class="carousel-caption text-center text-white">
+            <h1>Empowering Super Admins</h1>
+            <p>Create and manage Admin & HR roles with ease.</p>
+            <a href="/login.jsp" class="btn btn-primary btn-lg me-3">Login Now</a>
+            <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+          "
+        >
+          <div class="overlay"></div>
+          <div class="carousel-caption text-center text-white">
+            <h1>Smart Student Operations</h1>
+            <p>Admins can perform full CRUD operations while HRs can view and modify data.</p>
+            <a href="login.jsp" class="btn btn-primary btn-lg me-3">Start Managing</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-5">Our Features</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="feature-icon mb-3">👩‍🎓</div>
+            <h5>Student Management</h5>
+            <p>Easily add, update, and manage student details in a structured way.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon mb-3">👨‍💼</div>
+            <h5>Role-Based Access</h5>
+            <p>Super Admin, Admin, and HR roles ensure secure and controlled access.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-icon mb-3">📊</div>
+            <h5>Analytics & Reports</h5>
+            <p>Track student performance and generate reports with just one click.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-5">About Us</h2>
+        <p class="lead">
+          StudentManager Pro is a modern web-based solution built with Java Servlet & JSP to help educational institutions manage students, admins,
+          and HR seamlessly. Our mission is to make education management simple, efficient, and digital-first.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-5">Contact Us</h2>
+        <p>Have questions or need support? Reach out to us!</p>
+        <form class="row justify-content-center form" action="https://formspree.io/f/mldpdyev" method="post">
+          <div class="col-md-6">
+            <input name="name" type="text" class="name form-control mb-3" placeholder="Your Name" required />
+            <input name="email" type="email" class="email form-control mb-3" placeholder="Your Email" required />
+            <textarea name="message" class="message form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
+            <button class="btn btn-primary btn-lg w-100">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">© 2025 Student Management System </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const form = document.querySelector(".form");
+      const name = document.querySelector(".name");
+      const email = document.querySelector(".email");
+      const message = document.querySelector(".message");
+      form.addEventListener("submit", (e) => {
+        setTimeout(() => {
+          name.value = "";
+          email.value = "";
+          message.value = "";
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
