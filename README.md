@@ -1,15 +1,17 @@
+# 🎓 StudentManagementPro
+
 StudentManagementPro is a Java-based web application designed for efficient management of student records and administrative tasks in educational institutions. It provides secure user authentication, authorization, and role-based access control (RBAC) with multiple user roles.
 
-## Features
+## ✨ Features
 
-- **Student Management:** Create, update, search, and manage student records.
-- **User Management:** Add and manage users with roles such as Super Admin, Admin, and HR.
-- **Authentication & Authorization:** Secure login system with role based access management.
-- **Role-Based Access Control (RBAC):** Restrict access to features based on user roles (Super Admin, Admin, HR).
-- **Dashboards:** Separate dashboards for Super Admin and other users.
-- **Settings:** Manage password change.
+- 👨‍🎓 **Student Management:** Create, update, search, and manage student records.
+- 👥 **User Management:** Add and manage users with roles such as Super Admin, Admin, and HR.
+- 🔐 **Authentication & Authorization:** Secure login system with role based access management.
+- 🛡️ **Role-Based Access Control (RBAC):** Restrict access to features based on user roles (Super Admin, Admin, HR).
+- 📊 **Dashboards:** Separate dashboards for Super Admin and other users.
+- ⚙️ **Settings:** Manage password change.
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **Java** (Servlets, JSP)
 - **Jakarta Servlet API**
@@ -18,7 +20,7 @@ StudentManagementPro is a Java-based web application designed for efficient mana
 - **Lombok** (Boilerplate code reduction)
 - **Maven** (Build and dependency management)
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 StudentManagementPro/
@@ -75,7 +77,7 @@ StudentManagementPro/
 
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 - Java 17 or above
@@ -108,12 +110,12 @@ StudentManagementPro/
 5. **Access the application:**
    - Open your browser and go to `http://localhost:8080/ServletTask/`
 
-## User Roles
-- **Super Admin:** Full access to all features and can perform CRUD operation of Users(Admin & HR).
-- **Admin:** Manage students can performs CRUD operation of Students.
-- **HR:** Limited access only can View and Update Students.
+## 👥 User Roles
+- 🛡️ **Super Admin:** Full access to all features and can perform CRUD operation of Users(Admin & HR).
+- 🏫 **Admin:** Manage students can performs CRUD operation of Students.
+- 👔 **HR:** Limited access only can View and Update Students.
 
-## Screenshots
+## 📸 Screenshots
 
 <details>
 <summary>Super Admin Operations </summary>
@@ -162,7 +164,7 @@ StudentManagementPro/
 
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/pritiranjan-01/Student-Management-Pro-JSP_Servlet_Hibernate/blob/main/LICENSE) file for details.
 
 ---
 Feel free to contribute or raise issues to help improve StudentManagementPro!
