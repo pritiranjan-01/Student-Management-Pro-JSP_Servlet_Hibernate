@@ -1,5 +1,3 @@
-<img width="1910" height="922" alt="Homepage1" src="https://github.com/user-attachments/assets/e3db7fb8-9ef0-4122-ae3b-247744003c49" /># StudentManagementPro
-
 StudentManagementPro is a Java-based web application designed for efficient management of student records and administrative tasks in educational institutions. It provides secure user authentication, authorization, and role-based access control (RBAC) with multiple user roles.
 
 ## Features
@@ -81,21 +79,37 @@ StudentManagementPro/
    - Open your browser and go to `http://localhost:8080/ServletTask/`
 
 ## User Roles
-- **Super Admin:** Full access to all features and user management.
-- **Admin:** Manage students and view reports.
-- **HR:** Limited access for HR-related tasks.
+- **Super Admin:** Full access to all features and can perform CRUD operation of Users(Admin & HR).
+- **Admin:** Manage students can performs CRUD operation of Students.
+- **HR:** Limited access only can View and Update Students.
 
 ## Screenshots
 
 <details>
-  <summary>Login Page</summary>
-  
-  ![Dashboard Page]<img width="1910" height="922" alt="Homepage1" src="https://github.com/user-attachments/assets/f626c0a7-3be2-430e-b6b3-9187bceb0340" />
-
-  ![Super Admin Dashboard]<img width="1910" height="922" alt="SuperAdminDashboard" src="https://github.com/user-attachments/assets/c4b3c7fc-3397-4595-9f8a-fefac931ff48" />
+ <summary>Super Admin Operations </summary>
+  ##### [Home Page]<img width="1910" height="922" alt="Homepage1" src="https://github.com/user-attachments/assets/f626c0a7-3be2-430e-b6b3-9187bceb0340" />
+  ##### [Dashboard]<img width="1910" height="922" alt="SuperAdminDashboard" src="https://github.com/user-attachments/assets/c4b3c7fc-3397-4595-9f8a-fefac931ff48" />
+  ##### [Create User]<img width="1910" height="922" alt="sp-createuser" src="https://github.com/user-attachments/assets/628890ac-26c3-4c40-934f-12acd61c8710" />
+  ##### [Manage User]<img width="1910" height="922" alt="sp-createuser" src="https://github.com/user-attachments/assets/0eaf3a60-6a0d-4290-b7f1-4ab66125b3c5" />
+</details>
+<details>
+ <summary>Admin Operations </summary>
+  ##### [Admin Dashboard]<img width="1910" height="922" alt="AdminDashboard" src="https://github.com/user-attachments/assets/89c0fe18-7faa-4f94-a0fe-5747bf4bd08e" />
+  ##### [Create Student]<img width="1920" height="1080" alt="adminCreateStudent" src="https://github.com/user-attachments/assets/7ab8bde3-05f9-4c40-bb0e-6172165e7f6d" />
+  ##### [Manage Student]<img width="1910" height="922" alt="adminManageStudent" src="https://github.com/user-attachments/assets/0409109d-c610-4443-a8b5-85b2f7242b2d" />
+  ##### [Search Student]<img width="1910" height="922" alt="AdminSearchStudent" src="https://github.com/user-attachments/assets/76833d13-7ef8-4817-aafd-8e437f232f21" />
+  ##### [Update Student]<img width="1910" height="922" alt="adminUpdateStudent" src="https://github.com/user-attachments/assets/2aaaff6e-4de3-4fbd-9cb1-93670194907a" />
+  ##### [Setting]<img width="1910" height="922" alt="AdminSetting" src="https://github.com/user-attachments/assets/0225f437-5457-40e1-b5fd-6bd56126666b" />
 
 </details>
-
+<details>
+ <summary>HR Operations </summary>
+  ##### [HR Dashboard]<img width="1910" height="922" alt="HRDashboard" src="https://github.com/user-attachments/assets/bcc47669-6f32-4b01-87ec-0a0b00e3ce95" />
+  ##### [Manage Student]<img width="1910" height="922" alt="HRManageStudent" src="https://github.com/user-attachments/assets/e4cb2605-cc2c-4329-b11a-10aa20fc7c43" />
+  ##### [Search Student]<img width="1910" height="922" alt="HRSearchStudent" src="https://github.com/user-attachments/assets/1684f573-8951-4fbe-80ac-03cbdeff80af" />
+  ##### [Update Student]<img width="1910" height="922" alt="HRUpdateStudent" src="https://github.com/user-attachments/assets/02919b91-6049-43da-823e-d3f3735e6302" />
+  ##### [Setting]<img width="1910" height="922" alt="HRSetting" src="https://github.com/user-attachments/assets/4cad8550-e142-41a3-8677-29ef90f3ec12" />
+</details>
 
 ## License
 This project is licensed under the MIT License.
