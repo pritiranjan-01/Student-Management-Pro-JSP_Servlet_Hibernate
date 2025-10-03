@@ -16,7 +16,6 @@ StudentManagementPro is a Java-based web application designed for efficient mana
 - **Hibernate ORM**
 - **MySQL** (Database)
 - **Lombok** (Boilerplate code reduction)
-- **JUnit** (Testing)
 - **Maven** (Build and dependency management)
 
 ## Project Structure
@@ -24,11 +23,41 @@ StudentManagementPro is a Java-based web application designed for efficient mana
 ```
 StudentManagementPro/
 ├── pom.xml
+├── README.md
 ├── src/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
-│   │   ├── resources/
+│   │   │       └── prm/
+│   │   │           ├── container/
+│   │   │           │   ├── ChangePasswordServlet.java
+│   │   │           │   ├── DeleteStudentServlet.java
+│   │   │           │   ├── DeleteUserServlet.java
+│   │   │           │   ├── ExceptionHandlerServlet.java
+│   │   │           │   ├── FetchAllStudents.java
+│   │   │           │   ├── FetchSingleStudent.java
+│   │   │           │   ├── LogoutServlet.java
+│   │   │           │   ├── SaveStudentServlet.java
+│   │   │           │   ├── UpdateStudent.java
+│   │   │           │   ├── UpdateUser.java
+│   │   │           │   ├── UserLoginServlet.java
+│   │   │           │   └── UserRegistrationServlet.java
+│   │   │           ├── dao/
+│   │   │           │   ├── EntityProxy.java
+│   │   │           │   ├── StudentDAO.java
+│   │   │           │   ├── UserDAO.java
+│   │   │           │   └── UserLastLoginDTO.java
+│   │   │           ├── entity/
+│   │   │           │   ├── AuthorizeRoleEnum.java
+│   │   │           │   ├── Student.java
+│   │   │           │   ├── Users.java
+│   │   │           │   └── Usertype.java
+│   │   │           ├── util/
+│   │   │           │   ├── UserAuthenticationUtil.java
+│   │   │           │   ├── UserAuthorizationValidUtil.java
+│   │   │           │   └── UserResponseObject.java
+│   │   │           └── weblistener/
+│   │   │               └── WebInformationListener.java
 │   │   └── webapp/
 │   │       ├── CreateStudent.jsp
 │   │       ├── CreateUser.jsp
@@ -40,9 +69,6 @@ StudentManagementPro/
 │   │       ├── SuperAdminDashboard.jsp
 │   │       ├── UpdateStudent.jsp
 │   │       ├── UsersDashboard.jsp
-│   │       └── WEB-INF/
-│   └── test/
-└── target/
 ```
 
 ## Getting Started
