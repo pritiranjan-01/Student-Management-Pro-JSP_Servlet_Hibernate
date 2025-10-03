@@ -92,11 +92,6 @@ StudentManagementPro/
   
   ![Dashboard Page]<img width="1910" height="922" alt="Homepage1" src="https://github.com/user-attachments/assets/f626c0a7-3be2-430e-b6b3-9187bceb0340" />
 
-</details>
-
-<details>
-  <summary>Super Admin Dashboard</summary>
-  
   ![Super Admin Dashboard]<img width="1910" height="922" alt="SuperAdminDashboard" src="https://github.com/user-attachments/assets/c4b3c7fc-3397-4595-9f8a-fefac931ff48" />
 
 </details>
