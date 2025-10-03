@@ -69,6 +69,10 @@ StudentManagementPro/
 │   │       ├── SuperAdminDashboard.jsp
 │   │       ├── UpdateStudent.jsp
 │   │       ├── UsersDashboard.jsp
+├── test/
+├── target/
+├── pom.xml
+
 ```
 
 ## Getting Started
