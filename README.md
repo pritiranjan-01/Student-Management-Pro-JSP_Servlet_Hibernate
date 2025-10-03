@@ -13,12 +13,16 @@ StudentManagementPro is a Java-based web application designed for efficient mana
 
 ## 🛠️ Technologies Used
 
-- **Java** (Servlets, JSP)
-- **Jakarta Servlet API**
-- **Hibernate ORM**
-- **MySQL** (Database)
+- **Java**
+- **Servlet & JSP**
+- **JPA with Hibernate**
+- **MySQL** 
 - **Lombok** (Boilerplate code reduction)
+- **Apache Tomcat 10** 
 - **Maven** (Build and dependency management)
+- **Eclipse IDE**
+- **Bootstrap**
+- **SweetAlert**
 
 ## 📂 Project Structure
 
