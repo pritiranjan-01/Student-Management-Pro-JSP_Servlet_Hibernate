@@ -122,12 +122,11 @@ StudentManagementPro/
 ## 📸 Screenshots
 
 <details>
-<summary>Home Page & Login Page
+<summary>Home Page & Login Page </summary>
   ## Home Page 
      <img width="1910" height="922" alt="Homepage1" src="https://github.com/user-attachments/assets/f626c0a7-3be2-430e-b6b3-9187bceb0340" />
   ## Login Page(for all Users) 
      <img width="1910" height="922" alt="loginpage" src="https://github.com/user-attachments/assets/8046f25e-d4a2-4f64-babf-2689a7ae587d" />
-</summary>
 </details>
    
 <details>
