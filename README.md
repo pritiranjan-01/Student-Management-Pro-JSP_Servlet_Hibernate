@@ -122,43 +122,50 @@ StudentManagementPro/
 ## 📸 Screenshots
 
 <details>
-<summary>Super Admin Operations </summary>
-   ##### Home Page
+<summary>Home Page & Login Page
+  ## Home Page 
      <img width="1910" height="922" alt="Homepage1" src="https://github.com/user-attachments/assets/f626c0a7-3be2-430e-b6b3-9187bceb0340" />
-   ##### Dashboard
+  ## Login Page(for all Users) 
+     <img width="1910" height="922" alt="loginpage" src="https://github.com/user-attachments/assets/8046f25e-d4a2-4f64-babf-2689a7ae587d" />
+</summary>
+</details>
+   
+<details>
+<summary>Super Admin Operations </summary>
+   ## Dashboard
      <img width="1910" height="922" alt="SuperAdminDashboard" src="https://github.com/user-attachments/assets/c4b3c7fc-3397-4595-9f8a-fefac931ff48" />
-   #### Create User
+   ## Create User
      <img width="1910" height="922" alt="sp-createuser" src="https://github.com/user-attachments/assets/628890ac-26c3-4c40-934f-12acd61c8710" />
-   ##### Manage User
+   ## Manage User
      <img width="1910" height="922" alt="sp-manageuser" src="https://github.com/user-attachments/assets/4422dbe4-ef4e-4bf5-addf-db7933a881e5" />
 </details>
 <details>
  <summary>Admin Operations </summary>
-  #####Admin Dashboard
+  ## Admin Dashboard
    <img width="1910" height="922" alt="AdminDashboard" src="https://github.com/user-attachments/assets/89c0fe18-7faa-4f94-a0fe-5747bf4bd08e" />
-  ##### Create Student
+  ## Create Student
    <img width="1920" height="1080" alt="adminCreateStudent" src="https://github.com/user-attachments/assets/7ab8bde3-05f9-4c40-bb0e-6172165e7f6d" />
-  ##### Manage Student
+  ## Manage Student
    <img width="1910" height="922" alt="adminManageStudent" src="https://github.com/user-attachments/assets/0409109d-c610-4443-a8b5-85b2f7242b2d" />
-  ##### Search Student
+  ## Search Student
    <img width="1910" height="922" alt="AdminSearchStudent" src="https://github.com/user-attachments/assets/76833d13-7ef8-4817-aafd-8e437f232f21" />
-  ##### Update Student
+  ## Update Student
    <img width="1910" height="922" alt="adminUpdateStudent" src="https://github.com/user-attachments/assets/2aaaff6e-4de3-4fbd-9cb1-93670194907a" />
-  ##### Setting
+  ## Setting
    <img width="1910" height="922" alt="AdminSetting" src="https://github.com/user-attachments/assets/0225f437-5457-40e1-b5fd-6bd56126666b" />
 
 </details>
 <details>
  <summary>HR Operations </summary>
-  ##### HR Dashboard
+  ## HR Dashboard
    <img width="1910" height="922" alt="HRDashboard" src="https://github.com/user-attachments/assets/bcc47669-6f32-4b01-87ec-0a0b00e3ce95" />
-  ##### Manage Student
+  ## Manage Student
    <img width="1910" height="922" alt="HRManageStudent" src="https://github.com/user-attachments/assets/e4cb2605-cc2c-4329-b11a-10aa20fc7c43" />
-  ##### Search Student
+  ## Search Student
    <img width="1910" height="922" alt="HRSearchStudent" src="https://github.com/user-attachments/assets/1684f573-8951-4fbe-80ac-03cbdeff80af" />
-  ##### Update Student
+  ## Update Student
    <img width="1910" height="922" alt="HRUpdateStudent" src="https://github.com/user-attachments/assets/02919b91-6049-43da-823e-d3f3735e6302" />
-  ##### Setting
+  ## Setting
    <img width="1910" height="922" alt="HRSetting" src="https://github.com/user-attachments/assets/4cad8550-e142-41a3-8677-29ef90f3ec12" />
 </details>
 
