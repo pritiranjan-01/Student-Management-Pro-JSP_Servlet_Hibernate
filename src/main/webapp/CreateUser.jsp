@@ -86,31 +86,6 @@
         <a href="logout"><i class="bi bi-box-arrow-right"></i> Logout</a>
       </div>
       
-       
-     <%--Response from Servlet --%>
-<%
-    String msg = (String) request.getAttribute("message");
-    String type = (String) request.getAttribute("msgType");
-    if (msg != null && type != null) { 
-        String icon = "info"; // default
-        String title = "Notice";
-        if("success".equals(type)) { icon = "success"; title = "Success!"; }
-        else if("error".equals(type)) { icon = "error"; title = "Oops!"; }
-        else if("warning".equals(type)) { icon = "warning"; title = "Warning!"; }
-%>
-<script>
-    Swal.fire({
-        title: "<%= title %>",
-        text: "<%= msg %>",
-        icon: "<%= icon %>",
-        confirmButtonText: "OK",
-        timer: 4000,
-        timerProgressBar: true,
-        allowOutsideClick: false
-    });
-</script>
-<% } %>
-      
 
       <!-- Main Content -->
       <div class="col-md-10 p-4">
@@ -160,6 +135,33 @@
       </div>
     </div>
   </div>
+  
+         
+     <%--Response from Servlet --%>
+<%
+    String msg = (String) request.getAttribute("message");
+    String type = (String) request.getAttribute("msgType");
+    if (msg != null && type != null) { 
+        String icon = "info"; // default
+        String title = "Notice";
+        if("success".equals(type)) { icon = "success"; title = "Success!"; }
+        else if("error".equals(type)) { icon = "error"; title = "Oops!"; }
+        else if("warning".equals(type)) { icon = "warning"; title = "Warning!"; }
+%>
+<script>
+    Swal.fire({
+        title: "<%= title %>",
+        text: "<%= msg %>",
+        icon: "<%= icon %>",
+        confirmButtonText: "OK",
+        timer: 4000,
+        timerProgressBar: true,
+        allowOutsideClick: false
+    });
+</script>
+<% } %>
+      
+  
   
 <script type="text/javascript">
 const username = document.getElementById("username");
