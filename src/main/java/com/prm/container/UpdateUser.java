@@ -65,9 +65,18 @@ public class UpdateUser extends HttpServlet {
 		String uname = req.getParameter("username");
 		String pw = req.getParameter("password");
 		
-		Users userobj = new Users(id, uname, userrole, pw, fullName);
-		userdao.updateUser(userobj);
+		Users userobj = userdao.getUserbyId(id);
+		
+		if(userobj != null) {
+		    // Update only the fields you want
+		    userobj.setFullName(fullName);
+		    userobj.setUsername(uname);
+		    userobj.setPassword(pw);
+		    userobj.setUserrole(userrole);
 
+		    // Merge back to DB
+		userdao.updateUser(userobj);
+		}
 		req.setAttribute("message", "User updated successfully");
 		req.setAttribute("msgType", "success");
 		RequestDispatcher dispatcher = req.getRequestDispatcher("ManageUsers.jsp");

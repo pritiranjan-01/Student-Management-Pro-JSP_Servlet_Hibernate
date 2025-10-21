@@ -51,20 +51,48 @@ public class UserDAO extends EntityProxy{
 		return users.get(0);
 	}
 	
-	public String addSuperAdmin() {
-		String hql = "select u from Users u";
-		Query query = super.getEntityManager().createQuery(hql);
-		List<Users> users = query.getResultList();
+//	public String addSuperAdmin() {
+//		String hql = "select u from Users u";
+//		Query query = super.getEntityManager().createQuery(hql);
+//		List<Users> users = query.getResultList();
+//		
+//		if(users.isEmpty()) {
+//			Usertype type = Usertype.SUPERADMIN;
+//			Users user = new Users(1,"superadmin@gmail.com",type,"0000","Pritiranjan",  LocalDateTime.now());
+//			super.getEntityTransaction().begin();
+//			super.getEntityManager().merge(user);
+//			super.getEntityTransaction().commit();
+//			return "Super Admin Created";
+//		}
+//		return "Super Admin Already Exist";
 		
-		if(users.isEmpty()) {
-			Usertype type = Usertype.SUPERADMIN;
-			Users user = new Users(1,"superadmin@gmail.com",type,"0000","Pritiranjan",  LocalDateTime.now());
-			super.getEntityTransaction().begin();
-			super.getEntityManager().persist(user);
-			super.getEntityTransaction().commit();
-			return "Super Admin Created";
-		}
-		return "Super Admin Already Exist";
+		public String addSuperAdmin() {
+		    // Check if super admin already exists
+		    String hql = "select u from Users u where u.userrole = :role";
+		    Query query = super.getEntityManager().createQuery(hql);
+		    query.setParameter("role", Usertype.SUPERADMIN);
+		    List<Users> users = query.getResultList();
+
+		    if(users.isEmpty()) {
+		        Users user = new Users();
+		        user.setFullName("Pritiranjan");
+		        user.setUsername("superadmin@gmail.com");
+		        user.setUserrole(Usertype.SUPERADMIN);
+		        user.setPassword("0000");
+		        user.setLastLogin(LocalDateTime.now());
+
+		        EntityTransaction et = super.getEntityTransaction();
+		        try {
+		            et.begin();
+		            super.getEntityManager().persist(user); // Use persist() for new entity
+		            et.commit();
+		            return "Super Admin Created";
+		        } catch (Exception e) {
+		            et.rollback();
+		            return "Failed to create Super Admin: " + e.getMessage();
+		        }
+		    }
+		    return "Super Admin Already Exists";
 	}
 	
 	public List<Users> getAllUsers(){
@@ -108,20 +136,23 @@ public class UserDAO extends EntityProxy{
 		return new long[] {totalUsers,totalAdmins,totalHRs};
 	}
 	
-	public List<UserLastLoginDTO> getLastLoginDetails() {
-	    String hql = "select u from Users u";
-	    List<Users> users = getEntityManager().createQuery(hql).getResultList();
+	public List<UserLastLoginDTO> getLastLoginDetails() {String hql = "select u from Users u order by u.lastLogin desc"; // Order by lastLogin descending
+	List<Users> users = getEntityManager().createQuery(hql, Users.class)
+            .setMaxResults(5) // Only get last 5 users
+            .getResultList();
 
-	    List<UserLastLoginDTO> result = new ArrayList<>();
-	    for (Users u : users) {
-	    	if(u.getUserrole().name().equals("SUPERADMIN")) continue; //Skips the SuperAdmin lastlogin log.
-	    	String fullName = u.getFullName();
-	        String role =  u.getUserrole().toString();
-	        String lastLogin = (u.getLastLogin() != null) ? u.getLastLogin().format(DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss")) : "null";
-	        
-	        result.add(new UserLastLoginDTO(fullName, role, lastLogin));
-	    }
-	    return result;
+      	List<UserLastLoginDTO> result = new ArrayList<>();
+      	for (Users u : users) {
+      	if(u.getUserrole().name().equals("SUPERADMIN")) continue; // Skip SuperAdmin
+
+    	  		String fullName = u.getFullName();
+    	  		String role = u.getUserrole().toString();
+    	  		String lastLogin = (u.getLastLogin() != null) 
+    	  						? u.getLastLogin().format(DateTimeFormatter.ofPattern("yyyy-dd-MM HH:mm:ss")) 
+    	  						: "null";
+
+    	  		result.add(new UserLastLoginDTO(fullName, role, lastLogin));
+      		}
+      	return result;
 	}
-
 }

@@ -15,6 +15,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/changePassword")
+
 public class ChangePasswordServlet extends HttpServlet {
 	
 	private final UserDAO userDao = UserDAO.getUserDAO();
