@@ -2,7 +2,11 @@ package com.prm.weblistener;
 
 import com.prm.dao.EntityProxy;
 import com.prm.dao.UserDAO;
+import com.prm.entity.Usertype;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.Query;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
@@ -12,7 +16,7 @@ import jakarta.servlet.annotation.WebListener;
 public class WebInformationListener implements ServletContextListener {
 
 	private static final UserDAO userDao = UserDAO.getUserDAO();
-	
+		
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
 		ServletContext context = sce.getServletContext();
@@ -30,4 +34,5 @@ public class WebInformationListener implements ServletContextListener {
 		System.out.println("Context data destroyed");
 		EntityProxy.closeConnection();
 	}
+	 
 }

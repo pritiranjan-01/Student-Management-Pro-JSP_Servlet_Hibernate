@@ -13,10 +13,11 @@
 
         <properties>
             <!-- JDBC connection properties -->
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/servlettask"/>
-            <property name="javax.persistence.jdbc.user" value="root"/>
-            <property name="javax.persistence.jdbc.password" value="simun9788"/>
+            <property name="javax.persistence.jdbc.driver" value="${DB_DRIVER}"/>
+            <property name="javax.persistence.jdbc.url" value="${DB_URL}"/>
+			<property name="javax.persistence.jdbc.user" value="${DB_USER}"/>
+			<property name="javax.persistence.jdbc.password" value="${DB_PASS}"/>
+
 
             <!-- Hibernate properties -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>

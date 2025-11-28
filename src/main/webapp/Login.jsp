@@ -51,18 +51,58 @@
 
                         <button type="submit" class="btn btn-primary w-100">Login</button>
                     </form>
+                    <!-- ✅ DEMO LOGIN BUTTONS — Add Here -->
+			<div class="mt-4">
+    					<h6 class="text-center mb-2">Demo Logins</h6>
+
+    					<div class="d-flex flex-column gap-2">
+      				    <button type="button" class="btn btn-outline-danger w-100 demo-btn"  data-user="superadmin_demo" data-pass="Super@123">
+                             Login as SuperAdmin (Demo)
+                        </button>
+
+                         <button type="button" class="btn btn-outline-primary w-100 demo-btn" data-user="admin_demo" data-pass="Admin@123">
+                              Login as Admin (Demo)
+                         </button>
+
+                         <button type="button" class="btn btn-outline-success w-100 demo-btn" data-user="hr_demo" data-pass="Hr@123">
+                               Login as HR (Demo)
+                         </button>
+                   </div>
+             </div>
+                  <!-- END OF DEMO LOGIN SECTION -->
 
                     <% String message = (String) request.getAttribute("message"); if (message != null) { %>
-                        <div class="alert alert-danger mt-3 text-center">
+                        <div class="alert alert-danger mt-3 text-center auto-hide">
                             <%= message %>
                         </div>
                     <% } %>
 
                     <% String logoutMessage = (String) request.getAttribute("logoutMessage"); if (logoutMessage != null) { %>
-                        <div class="alert alert-success mt-3 text-center">
+                        <div class="alert alert-success mt-3 text-center auto-hide">
                             <%= logoutMessage %>
                         </div>
                     <% } %>
+                    
+                    <script>
+  						  // Demo Login Auto Fill
+   						document.querySelectorAll(".demo-btn").forEach(btn => {
+      						  btn.addEventListener("click", () => {
+           				document.querySelector("input[name='username']").value = btn.dataset.user;
+            				document.querySelector("input[name='password']").value = btn.dataset.pass;
+        					});
+    					});
+				</script>
+                    
+                    <script>
+    					// Hide alert after 5 seconds
+    					setTimeout(() => {
+        					document.querySelectorAll('.auto-hide').forEach(el => {
+           				 el.style.transition = "opacity 0.5s";
+           				 el.style.opacity = "0";
+           				 setTimeout(() => el.remove(), 500); // remove from DOM after fade-out
+       				 });
+   				 }, 5000);
+				</script>
                 </div>
             </div>
         </div>

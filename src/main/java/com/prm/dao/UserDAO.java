@@ -67,7 +67,8 @@ public class UserDAO extends EntityProxy{
 //		return "Super Admin Already Exist";
 		
 		public String addSuperAdmin() {
-		    // Check if super admin already exists
+
+			// Check if super admin already exists
 		    String hql = "select u from Users u where u.userrole = :role";
 		    Query query = super.getEntityManager().createQuery(hql);
 		    query.setParameter("role", Usertype.SUPERADMIN);
