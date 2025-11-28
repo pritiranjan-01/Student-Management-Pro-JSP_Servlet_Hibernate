@@ -13,10 +13,10 @@
 
         <properties>
             <!-- JDBC connection properties -->
-            <property name="javax.persistence.jdbc.driver" value="${DB_DRIVER}"/>
-            <property name="javax.persistence.jdbc.url" value="${DB_URL}"/>
-			<property name="javax.persistence.jdbc.user" value="${DB_USER}"/>
-			<property name="javax.persistence.jdbc.password" value="${DB_PASS}"/>
+            <property name="jakarta.persistence.jdbc.driver" value="${DB_DRIVER}"/>
+            <property name="jakarta.persistence.jdbc.url" value="${DB_URL}"/>
+			<property name="jakarta.persistence.jdbc.user" value="${DB_USER}"/>
+			<property name="jakarta.persistence.jdbc.password" value="${DB_PASS}"/>
 
 
             <!-- Hibernate properties -->
